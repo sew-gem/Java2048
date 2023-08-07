@@ -1,0 +1,35 @@
+// 11 number in power of 2: 
+1 2 4 8 16 32 64 128 256 512 1024 2048
+
+// launcher class
+Main(){
+    create new instance of GUI class
+
+}
+
+GUI class{ >> contain infor for the actual interface  that use to interact with
+    bring up the actual interface 
+    create a Game class
+    is the listening: user input : arrow down up left right
+    these input will updare the array of int in Game class
+}
+Gmae >> keep track of certain number
+    [4,4] array int
+    Score
+    Hight Score
+    {
+        ancester be store in GUI
+        data store here >> populate the interface
+    }
+
+// when game over >> check the score and print out the highest core
+                >> ask player if they play game again
+// here's what the actual iner patient look like 
+a basic box: 
+    top left: label 1024 
+    in the midle: play Score 
+    top right:  Hight Score
+    inside is another box: 4x4 grid 
+
+// how it's interact 
+
