@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class Game {  //store actual data of game 
 
-    private int[] [] gameBoard;
+    private int[][] gameBoard; 
     private Random r = new Random();
 
     public Game(){
@@ -29,7 +29,7 @@ public class Game {  //store actual data of game
                 }
             }
         }
-        int choice = r.nextInt(emptySpacesX.size());
+        int choice = r.nextInt(emptySpacesX.size()); //randomly choose position
         int numberChooser = r.nextInt(10); //value 0 - 9
         int newNumber = 1;
         if(numberChooser == 0){
@@ -84,7 +84,7 @@ public class Game {  //store actual data of game
         boolean[] alreadyCombined = {false, false, false, false};
         //iterate through the collumns [y]
         for(int y = 0; y < 4; y++){
-            for(int x = 2; x > -1; x--){ //for everthing doing backwards
+            for(int x = 2; x >= 0; x--){ //for everthing doing backwards
                 //determine whether or not it empty
                 if(gameBoard[x][y] != 0){
                     int value = gameBoard[x][y];
@@ -123,7 +123,7 @@ public class Game {  //store actual data of game
         boolean[] alreadyCombined = {false, false, false, false};
         //iterate through the collumns [y]
         for(int x = 0; x < 4; x++){
-            for(int y = 2; y > -1; y--){ //for everthing doing backwards
+            for(int y = 1; y < 4; y++){ //for everthing doing backwards
                 //determine whether or not it empty
                 if(gameBoard[x][y] != 0){
                     int value = gameBoard[x][y];
@@ -161,7 +161,7 @@ public class Game {  //store actual data of game
         boolean[] alreadyCombined = {false, false, false, false};
         //iterate through the collumns [y]
         for(int x = 0; x < 4; x++){
-            for(int y = 3; y > -1; y--){ //for everthing doing backwards
+            for(int y = 2; y > 0; y--){ //for everthing doing backwards
                 //determine whether or not it empty
                 if(gameBoard[x][y] != 0){
                     int value = gameBoard[x][y];
