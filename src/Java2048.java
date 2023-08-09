@@ -12,9 +12,20 @@
             g.printArray();
             g.pushUp();
             g.printArray();
+
             g.addNewNumber();
             g.printArray();
             g.pushDown();
+            g.printArray();
+
+            g.addNewNumber();
+            g.printArray();
+            g.pushLeft();
+            g.printArray();
+            
+            g.addNewNumber();
+            g.printArray();
+            g.pushRight();
             g.printArray();
         }
     }
